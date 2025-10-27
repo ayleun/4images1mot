@@ -1,0 +1,27 @@
+.app {
+  min-height: 100vh;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      #1a1a2e 0px,
+      #1a1a2e 3px,
+      #16213e 3px,
+      #16213e 8px
+    ),
+    linear-gradient(180deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 15px 30px 15px;
+}
+
+@media (max-width: 768px) {
+  .game-container {
+    padding: 15px 10px 25px 10px;
+  }
+}
+

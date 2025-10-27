@@ -1,0 +1,133 @@
+.level-complete-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.level-complete-content {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2c2c54 100%);
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+  animation: scaleIn 0.3s ease;
+  border: 3px solid #00b366;
+  position: relative;
+}
+
+.level-complete-content::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background: linear-gradient(135deg, #2c2c54 0%, #1a1a2e 100%);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.level-complete-content > * {
+  position: relative;
+  z-index: 1;
+}
+
+.success-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  animation: bounce 0.6s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 179, 102, 0.5));
+}
+
+.success-title {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00b366 0%, #008f4f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.success-message {
+  font-size: 20px;
+  color: #00b366;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.coins-earned {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+  border: 2px solid #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .level-complete-content {
+    padding: 30px;
+    margin: 0 20px;
+  }
+  
+  .success-icon {
+    font-size: 60px;
+  }
+  
+  .success-title {
+    font-size: 28px;
+  }
+  
+  .success-message {
+    font-size: 18px;
+  }
+}
+

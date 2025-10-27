@@ -1,0 +1,61 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 25px;
+  background: transparent;
+  padding: 0;
+}
+
+.image-container {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid #00b366;
+  position: relative;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(0, 179, 102, 0.1) 50%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.game-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.image-container:hover .game-image {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+.image-container:hover {
+  box-shadow: 0 8px 25px rgba(0, 179, 102, 0.4);
+  border-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    gap: 8px;
+  }
+  
+  .image-container {
+    border-radius: 8px;
+    border-width: 2px;
+  }
+}
+

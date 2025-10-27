@@ -1,0 +1,107 @@
+.hint-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.hint-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #2c2c54 0%, #1a1a2e 100%);
+  border: 3px solid #00b366;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.hint-button::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2c2c54 100%);
+  border-radius: 25px;
+  z-index: 0;
+}
+
+.hint-button > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hint-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #00b366 0%, #008f4f 100%);
+  color: #1a1a2e;
+  border-color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 179, 102, 0.5);
+}
+
+.hint-button:hover:not(:disabled)::before {
+  background: linear-gradient(135deg, #008f4f 0%, #00b366 100%);
+}
+
+.hint-button:active:not(:disabled) {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 179, 102, 0.4);
+}
+
+.hint-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  border-color: #6c757d;
+  transform: scale(0.95);
+}
+
+.hint-button:disabled::before {
+  background: linear-gradient(135deg, #495057 0%, #6c757d 100%);
+}
+
+.hint-text {
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hint-cost {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.4);
+  border: 2px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .hint-buttons {
+    gap: 10px;
+  }
+  
+  .hint-button {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+  
+  .hint-button svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .hint-text {
+    display: none;
+  }
+}
+
