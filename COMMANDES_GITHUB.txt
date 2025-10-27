@@ -1,0 +1,23 @@
+# 🚀 Commandes pour mettre votre projet sur GitHub
+
+## ÉTAPE 1 : Créer le dépôt sur GitHub.com
+
+➡️ Allez sur : https://github.com/new
+
+- Repository name : 4image1mots
+- Description : Jeu 4 Images 1 Mot avec React et Firebase
+- Public ou Private (votre choix)
+- NE COCHEZ PAS "Initialize with README"
+- Cliquez "Create repository"
+
+## ÉTAPE 2 : Exécutez ces commandes dans votre terminal
+
+# Remplacez VOTRE_USERNAME par votre nom d'utilisateur GitHub
+git remote add origin https://github.com/VOTRE_USERNAME/4image1mots.git
+
+git push -u origin master
+
+## ✅ C'est tout !
+
+Votre code sera sur : https://github.com/VOTRE_USERNAME/4image1mots
+
