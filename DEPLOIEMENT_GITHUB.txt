@@ -1,0 +1,24 @@
+# 🚀 Déploiement GitHub - Instruction Rapide
+
+## ÉTAPE 1 : Créez le dépôt sur GitHub
+➡️ https://github.com/new
+- Nom : 4image1mots
+- Description : Jeu 4 Images 1 Mot avec React et Firebase
+- Public/Private : Votre choix
+- ❌ Ne cochez PAS "Initialize with README"
+- ✅ Créez le dépôt
+
+## ÉTAPE 2 : Copiez l'URL du dépôt créé
+GitHub vous donnera une URL comme :
+https://github.com/VOTRE_USERNAME/4image1mots.git
+
+## ÉTAPE 3 : Exécutez ces commandes dans votre terminal
+
+# Remplacez l'URL ci-dessous par VOTRE URL GitHub
+git remote add origin https://github.com/VOTRE_USERNAME/4image1mots.git
+
+git push -u origin master
+
+## ✅ Fini !
+Votre code est maintenant sur GitHub !
+
