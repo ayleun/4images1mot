@@ -1,0 +1,60 @@
+# 🚀 INSTRUCTIONS FINALES - Créer le dépôt GitHub
+
+## ⚠️ IMPORTANT : Le dépôt GitHub n'existe pas encore !
+
+## ÉTAPE 1 : Créer le dépôt sur GitHub
+
+👉 Ouvrez ce lien dans votre navigateur :
+https://github.com/new
+
+### Remplissez :
+- **Repository name** : `4image1mots`
+- **Description** : `Jeu 4 Images 1 Mot avec React et Firebase`
+- **Visibilité** : Public ou Private (votre choix)
+- ⚠️ **NE COCHEZ PAS** "Initialize this repository with a README" (déjà un README dans le projet)
+- ⚠️ **NE COCHEZ PAS** "Add a license"
+- ⚠️ **NE COCHEZ PAS** "Add .gitignore"
+
+### Cliquez sur : "Create repository"
+
+---
+
+## ÉTAPE 2 : Une fois le dépôt créé, exécutez :
+
+```bash
+git push -u origin master
+```
+
+Si cette commande échoue, essayez :
+
+```bash
+git push -u origin main
+```
+
+---
+
+## ÉTAPE 3 : Authentification
+
+Si GitHub vous demande de vous authentifier :
+
+### Option A : Personal Access Token
+1. Allez sur : https://github.com/settings/tokens
+2. Cliquez "Generate new token (classic)"
+3. Sélectionnez les scopes : `repo`
+4. Copiez le token
+5. Utilisez le token comme mot de passe lors du push
+
+### Option B : Git Credential Manager
+Git peut vous rediriger vers une page de connexion GitHub
+
+---
+
+## ✅ Après le push réussi :
+
+Votre code sera visible sur :
+🔗 https://github.com/ayleun/4image1mots
+
+---
+
+**Dites-moi quand vous avez créé le dépôt, et je relancerai le push !** 🚀
+
